@@ -98,10 +98,7 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          */
         beforeEach(function(done) {
-            feed.empty();
-            // console.log(feed.html());
             loadFeed(0, function() {
-                // console.log(this);
                 oldFeed = feed.html();
                 loadFeed(1, function() {
                     newFeed = feed.html();
